@@ -3,13 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SQS Example</title>
+  <title>AWS SQS Project</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 80vh;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 500px;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      font-size: 1rem;
+      color: white;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Home Page</h1>
-  <p>Welcome to the home page!</p>
-  <a href="/send">Go to Send Page</a>
-  <br>
-  <a href="/messages">View Messages</a>
+  <header>
+    <h1>AWS SQS Project</h1>
+  </header>
+  <div class="container">
+    <div class="card">
+      <h2>Send a Message</h2>
+      <p>Use the button below to go to the message sender page.</p>
+      <a href="/send" class="btn">Send Message</a>
+    </div>
+    <div class="card">
+      <h2>View Messages</h2>
+      <p>See messages retrieved from the SQS queue.</p>
+      <a href="/messages" class="btn">View Messages</a>
+    </div>
+  </div>
+  <footer>
+    <p>© 2024 Sunil Kurthakoti | AWS SQS Project</p>
+  </footer>
 </body>
 </html>
